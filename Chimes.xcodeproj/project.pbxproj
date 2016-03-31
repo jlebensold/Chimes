@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A305EA57B8E15844E8B26A58 /* Pods_Chimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8326EFC4913C5BD3D71761E2 /* Pods_Chimes.framework */; };
 		FCA514471CAC67410075E3B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA514461CAC67410075E3B7 /* main.m */; };
 		FCA5144A1CAC67410075E3B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA514491CAC67410075E3B7 /* AppDelegate.m */; };
 		FCA5144D1CAC67410075E3B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA5144C1CAC67410075E3B7 /* ViewController.m */; };
 		FCA514501CAC67410075E3B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA5144E1CAC67410075E3B7 /* Main.storyboard */; };
 		FCA514521CAC67410075E3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA514511CAC67410075E3B7 /* Assets.xcassets */; };
 		FCA514551CAC67410075E3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA514531CAC67410075E3B7 /* LaunchScreen.storyboard */; };
+		FCA514621CAD1B2F0075E3B7 /* DatabaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA514611CAD1B2F0075E3B7 /* DatabaseConfiguration.swift */; };
+		FCC0E2891CAD250D00624EB8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC0E2881CAD250D00624EB8 /* SQLite.framework */; };
+		FCC0E28B1CAD2BA500624EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0E28A1CAD2BA500624EB8 /* SettingsViewController.swift */; };
+		FCC0E28D1CAD302C00624EB8 /* ChimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0E28C1CAD302C00624EB8 /* ChimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8326EFC4913C5BD3D71761E2 /* Pods_Chimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0E71875D5701495F30F7EE /* Pods-Chimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chimes/Pods-Chimes.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EAEA30BF9D10DF11B04B1F /* Pods-Chimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chimes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chimes/Pods-Chimes.release.xcconfig"; sourceTree = "<group>"; };
 		FCA514421CAC67410075E3B7 /* Chimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA514461CAC67410075E3B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCA514481CAC67410075E3B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		FCA514511CAC67410075E3B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA514541CAC67410075E3B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA514561CAC67410075E3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA5145E1CAD19370075E3B7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FCA514601CAD1B2E0075E3B7 /* Chimes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chimes-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCA514611CAD1B2F0075E3B7 /* DatabaseConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfiguration.swift; sourceTree = "<group>"; };
+		FCC0E2881CAD250D00624EB8 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/Chimes-exwojkdhacmsjufqxaosjuqvlkja/Build/Products/Debug-iphonesimulator/SQLite.framework"; sourceTree = "<group>"; };
+		FCC0E28A1CAD2BA500624EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FCC0E28C1CAD302C00624EB8 /* ChimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChimeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC0E2891CAD250D00624EB8 /* SQLite.framework in Frameworks */,
+				A305EA57B8E15844E8B26A58 /* Pods_Chimes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C5AE5584816277D9C0E775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0E2881CAD250D00624EB8 /* SQLite.framework */,
+				8326EFC4913C5BD3D71761E2 /* Pods_Chimes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		323C60E625452EAB053F7172 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E71875D5701495F30F7EE /* Pods-Chimes.debug.xcconfig */,
+				E9EAEA30BF9D10DF11B04B1F /* Pods-Chimes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FCA514391CAC67410075E3B7 = {
 			isa = PBXGroup;
 			children = (
+				FCA5145E1CAD19370075E3B7 /* libsqlite3.0.tbd */,
 				FCA514441CAC67410075E3B7 /* Chimes */,
 				FCA514431CAC67410075E3B7 /* Products */,
+				323C60E625452EAB053F7172 /* Pods */,
+				16C5AE5584816277D9C0E775 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +104,10 @@
 				FCA514531CAC67410075E3B7 /* LaunchScreen.storyboard */,
 				FCA514561CAC67410075E3B7 /* Info.plist */,
 				FCA514451CAC67410075E3B7 /* Supporting Files */,
+				FCA514611CAD1B2F0075E3B7 /* DatabaseConfiguration.swift */,
+				FCA514601CAD1B2E0075E3B7 /* Chimes-Bridging-Header.h */,
+				FCC0E28A1CAD2BA500624EB8 /* SettingsViewController.swift */,
+				FCC0E28C1CAD302C00624EB8 /* ChimeTableViewCell.swift */,
 			);
 			path = Chimes;
 			sourceTree = "<group>";
@@ -86,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA514591CAC67410075E3B7 /* Build configuration list for PBXNativeTarget "Chimes" */;
 			buildPhases = (
+				728FD387F19D47729FDB98CC /* Check Pods Manifest.lock */,
 				FCA5143E1CAC67410075E3B7 /* Sources */,
 				FCA5143F1CAC67410075E3B7 /* Frameworks */,
 				FCA514401CAC67410075E3B7 /* Resources */,
+				7771EFE383F86865D8AEDB64 /* Embed Pods Frameworks */,
+				0A04DECB7BEA69DE89FB393F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +188,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A04DECB7BEA69DE89FB393F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chimes/Pods-Chimes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728FD387F19D47729FDB98CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7771EFE383F86865D8AEDB64 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chimes/Pods-Chimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCA5143E1CAC67410075E3B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,7 +243,10 @@
 			files = (
 				FCA5144D1CAC67410075E3B7 /* ViewController.m in Sources */,
 				FCA5144A1CAC67410075E3B7 /* AppDelegate.m in Sources */,
+				FCC0E28D1CAD302C00624EB8 /* ChimeTableViewCell.swift in Sources */,
 				FCA514471CAC67410075E3B7 /* main.m in Sources */,
+				FCC0E28B1CAD2BA500624EB8 /* SettingsViewController.swift in Sources */,
+				FCA514621CAD1B2F0075E3B7 /* DatabaseConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +293,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -217,6 +313,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Chimes;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -243,6 +340,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -255,6 +353,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Chimes;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -263,23 +362,32 @@
 		};
 		FCA5145A1CAC67410075E3B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0E71875D5701495F30F7EE /* Pods-Chimes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Chimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = paradem.Chimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chimes/Chimes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FCA5145B1CAC67410075E3B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EAEA30BF9D10DF11B04B1F /* Pods-Chimes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Chimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = paradem.Chimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chimes/Chimes-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -302,6 +410,7 @@
 				FCA5145B1CAC67410075E3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

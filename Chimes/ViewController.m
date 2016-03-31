@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Chimes-Bridging-Header.h"
+#import "Chimes-Swift.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"This is a test");
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

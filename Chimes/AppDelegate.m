@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Chimes-Swift.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    DatabaseConfiguration *configuration = [DatabaseConfiguration alloc];
+    [configuration setup];
+    
     // Override point for customization after application launch.
     return YES;
 }
