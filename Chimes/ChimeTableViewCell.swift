@@ -15,13 +15,43 @@ class ChimeTableViewCell : UITableViewCell {
     
     @IBOutlet weak var chimeName: UILabel!
     
+    @IBOutlet weak var chimeDateTime: UIDatePicker!
     var chimeId: Int64!
+    
     override func awakeFromNib() {
         super.awakeFromNib();
         self.chimeEnabled.addTarget(self, action: Selector("stateChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.chimeDateTime.hidden = true
+        self.chimeDateTime.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLog("Row Initialized")
     }
     
+    func hideDatePicker() {
+        
+        self.chimeDateTime.hidden = false
+        self.chimeDateTime.alpha = 1.0
+        UIView.animateWithDuration(0.25, animations: {() -> Void in
+            self.chimeDateTime.alpha = 0.0
+            }, completion: {(finished: Bool) -> Void in
+                self.chimeDateTime.hidden = true
+        })
+
+    }
+    
+    func showDatePicker() {
+        self.chimeDateTime.hidden = false
+        self.chimeDateTime.alpha = 0.0;
+        UIView.animateWithDuration(0.25, animations: {() -> Void in
+            self.chimeDateTime.alpha = 1.0
+            }, completion: {(finished: Bool) -> Void in
+                self.chimeDateTime.hidden = false
+        })
+        
+    }
+    
+
     func stateChanged(switchState: UISwitch) {
         let db = DatabaseConfiguration.init().connect()
         

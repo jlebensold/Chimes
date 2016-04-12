@@ -48,20 +48,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1FV-cV-4uT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1FV-cV-4uT">
                                 <rect key="frame" x="0.0" y="216" width="414" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChimeTableViewCell" id="dvl-Q2-qSN" customClass="ChimeTableViewCell" customModule="Chimes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChimeTableViewCell" rowHeight="116" id="dvl-Q2-qSN" customClass="ChimeTableViewCell" customModule="Chimes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dvl-Q2-qSN" id="CeQ-2L-bcy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mct-RY-HJM" userLabel="chimeEnabled">
                                                     <rect key="frame" x="350" y="6" width="51" height="31"/>
                                                 </switch>
+                                                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-ds-ZOR">
+                                                    <rect key="frame" x="0.0" y="45" width="414" height="131"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="482007453.85364002">
+                                                        <!--2016-04-10 18:57:33 +0000-->
+                                                    </date>
+                                                </datePicker>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GND-qb-J5b" userLabel="chimeName">
                                                     <rect key="frame" x="27" y="11" width="271" height="21"/>
                                                     <accessibility key="accessibilityConfiguration" label="text"/>
@@ -72,6 +78,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="chimeDateTime" destination="ah3-ds-ZOR" id="1xG-yZ-qLE"/>
                                             <outlet property="chimeEnabled" destination="mct-RY-HJM" id="Yrh-lJ-5JN"/>
                                             <outlet property="chimeName" destination="GND-qb-J5b" id="EPb-WR-NfW"/>
                                         </connections>
@@ -101,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8O-dc-hhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="306"/>
+            <point key="canvasLocation" x="909" y="337"/>
         </scene>
     </scenes>
 </document>
